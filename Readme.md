@@ -10,8 +10,11 @@ Yes, this is a markdown parser for [WikkaWiki](http://wikkawiki.org/HomePage) fo
 > Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
 Easy steeps:
+
 1. Put this repo on "/plugins/handlers/md" directory.
+
 2. Copy the prisma css and js to your theme.
+
 3. Add the ".md" support to your Wakka.class.php file, this like on the example located on this repo "examples/Wakka.class.php.example".
 
 The detalled installed is explain on the next points:
