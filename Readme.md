@@ -128,9 +128,13 @@ If you dont have highliht review the css and js prism path:
 ## FAQs and TODOs
 
 - The handler have another flavors of markdown?
-> R: Yes the cebe parse have anothers flavors (traditional, GitHub, extra). By default is extra flavor, but you can change this on pd.php file.
+
+> R: Yes the cebe parse have anothers flavors (traditional, GitHub, extra). By default is extra flavor, but you can change this on pd.php file. Check for the cebe documentation, and the [markdown extra](https://kramdown.gettalong.org/syntax.html) for the especific formated.
+
 - The plugins works on with this handler?
+
 > R: For now, is not, plugins like "files" and "Category" etc, are not availables with the md plugins. (I need some time for check if it is posible and/or necesary).
+
 - [ ] TODO: Ask for add the css and js on the header.php by default.
 - [ ] TODO: Check for the common div and html objets css styles, I only check the table css style.
 - [ ] TODO: Check for the TOC Generator.
@@ -140,5 +144,5 @@ If you dont have highliht review the css and js prism path:
 
 # Powered by:
 - [WikkaWiki](http://wikkawiki.org/HomePage) is a flexible, standards-compliant and lightweight wiki engine written in PHP, which uses MySQL to store pages.
-- [Cebe Markdown parser](http://markdown.cebe.cc) A super fast, highly extensible markdown parser for PHP.
-- [Prism](http://prismjs.com)
+- [Cebe Markdown parser](http://markdown.cebe.cc) a super fast, highly extensible markdown parser for PHP.
+- [Prism](http://prismjs.com) is lightweight, extensible syntax hghlighter, built with modern web standart in mind.
