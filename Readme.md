@@ -1,6 +1,6 @@
 # WikkaWiki Markdown Handler plugin
 [![Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/Markdown.png)](http://markdown.cebe.cc)
-[![WikkaWiki](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/wikka_logo.jpg)](http://wikkawiki.org/HomePage)
+[![WikkaWiki](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
 [![Prism](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/prism-syntaxhighlighter.png)](http://prismjs.com/)
 
 ## What is this?
@@ -60,9 +60,11 @@ git clone https://github.com/oemunoz/Wikka-md-handler.git md/
 2. Copy the prism.js and prims.css to your "templates" directory (look into your configuration file your theme classic/kubric/light and copy on your respective css/js directorys).
 
 ```language-php
+<?php
 ....
 'theme' => 'classic'
 ....
+?>
 
 ```
 
