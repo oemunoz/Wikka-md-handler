@@ -23,9 +23,9 @@ if ($this->HasAccess('read') && $this->page)
 	// traditional markdown and parse full text
   //$parser = new \cebe\markdown\Markdown();
 	// use github markdown
-  //$parser = new \cebe\markdown\GithubMarkdown();
+  $parser = new \cebe\markdown\GithubMarkdown();
 	// use markdown extra
-  $parser = new \cebe\markdown\MarkdownExtra();
+  //$parser = new \cebe\markdown\MarkdownExtra();
 
 	// TODO ask to use and put this on the header.php. (head html) Maybe this dont work on very old browers becose of this.
 	echo '<link rel="stylesheet" type="text/css" href="'.$site_base.'plugins/handlers/md/css/prism.css" />';
