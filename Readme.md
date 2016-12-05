@@ -21,7 +21,7 @@ The detalled installed is explain on the next points:
 ![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
 ## Why?
-By defect WikkaWiki has their own formatting rules (these rules work like a charm), but on this days is very common to write all kain of documentation on Markdown, Markdown is the prefered formatting code for all kain of projects. I dont have a problem to know both ways of formatting, but is a lot of work traduce from one to the other, this plugin works on this point.
+By defect WikkaWiki has their own formatting rules (these rules work like a charm), but on this days is very common to write all cain of documentation on Markdown, Markdown is the prefered formatting code for all cain of projects. I dont have a problem to know both ways of formatting, but is a lot of work traduce from one to the other, this plugin works on this point.
 
 ## How?
 This plugin works in two ways (both if you wish), supose that mydoc and mydoc.md contains a document on Markdown format:
@@ -48,7 +48,7 @@ The first is like a simple Handler, this meaning that you have to add "/md" to t
 
 Directory Estructure:
 
-```language-bash
+```bash
 cd plugins/handlers/
 git clone https://github.com/oemunoz/Wikka-md-handler.git md/
 ```
@@ -61,7 +61,7 @@ Now, If you completed this, create a new document like this:
 wikka.php?wakka=mmymdoc
 ~~~~
 
-~~~~language-markdown
+~~~~markdown
 # Cacti docker container
 
 First Header  | Second Header
@@ -69,7 +69,7 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
-```language-css
+```css
 .example {
 		font-size: 2em;
 	}
@@ -86,7 +86,7 @@ If you are like me, you want to access to the document direct without adding "/m
 
 Edit the follow code near to the end of "libs/Wakka.class.php", backup your original file and the new must be like:
 
-```language-php
+```php
 <?php ....
 elseif( $this->GetHandler() == 'show' && pathinfo($this->GetPageTag(), PATHINFO_EXTENSION) == 'md' && $this->page['body'] != '' )
 {
@@ -118,7 +118,7 @@ If you dont have highliht review the css and js prism path:
 
 - The handler have another flavors of markdown?
 
-> R: Yes the cebe parse have anothers flavors (traditional, GitHub, extra). By default is extra flavor, but you can change this on pd.php file. Check for the cebe documentation, and the [markdown extra](https://kramdown.gettalong.org/syntax.html) for the especific formated.
+> R: Yes the cebe parse have anothers flavors (traditional, GitHub, extra). By default is GitHub flavor, but you can change this on pd.php file. Check for the cebe documentation, and the [markdown GitHub]( https://help.github.com/articles/github-flavored-markdown) for the especific formated.
 
 - The plugins works on with this handler?
 
