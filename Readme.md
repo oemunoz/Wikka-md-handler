@@ -20,6 +20,8 @@ Easy steeps:
 The detalled installed is explain on the next points:
 (Sorry for my English Im gonna to fix this at some time.)
 
+![Parse Markdown](images/mmymdoc_parse.png)
+
 ## Why?
 By defect WikkaWiki has their own formatting rules (these rules work like a charm), but on this days is very common to write all kain of documentation on Markdown, Markdown is the prefered formatting code for all kain of projects. I dont have a problem to know both ways of formatting, but is a lot of work traduce from one to the other, this plugin works on this point.
 
