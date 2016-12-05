@@ -1,12 +1,13 @@
 # WikkaWiki Markdown Handler plugin
-[![Markdown](images/Markdown.png)](http://markdown.cebe.cc)
-[![WikkaWiki](images/wikka_logo.jpg)](http://wikkawiki.org/HomePage)
-[![Prism](images/prism-syntaxhighlighter.png)](http://prismjs.com/)
+[![Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/Markdown.png)](http://markdown.cebe.cc)
+[![WikkaWiki](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/wikka_logo.jpg)](http://wikkawiki.org/HomePage)
+[![Prism](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/prism-syntaxhighlighter.png)](http://prismjs.com/)
 
 ## What is this?
 Yes, this is a markdown parser for [WikkaWiki](http://wikkawiki.org/HomePage) for Markdown, the magic is from the [Cebe Markdown parser](http://markdown.cebe.cc/).
 
-![Edit Markdown](images/mmymdoc_edit.png)
+![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
+
 > Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
 Easy steeps:
@@ -20,7 +21,7 @@ Easy steeps:
 The detalled installed is explain on the next points:
 (Sorry for my English Im gonna to fix this at some time.)
 
-![Parse Markdown](images/mmymdoc_parse.png)
+![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
 ## Why?
 By defect WikkaWiki has their own formatting rules (these rules work like a charm), but on this days is very common to write all kain of documentation on Markdown, Markdown is the prefered formatting code for all kain of projects. I dont have a problem to know both ways of formatting, but is a lot of work traduce from one to the other, this plugin works on this point.
@@ -48,11 +49,17 @@ The first is like a simple Handler, this meaning that you have to add "/md" to t
 
 1. Drop this repo on your "/plugins/handlers/md" directory.
 Directory Estructure:
-![Directory estructure](images/md_handler.png)
+
+```language-bash
+cd plugins/handlers/
+git clone https://github.com/oemunoz/Wikka-md-handler.git md/
+```
+
+![Directory estructure](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/md_handler.png)
 
 2. Copy the prism.js and prims.css to your "templates" directory (look into your configuration file your theme classic/kubric/light and copy on your respective css/js directorys).
 
-```php
+```language-php
 ....
 'theme' => 'classic'
 ....
@@ -65,7 +72,7 @@ Now, If you completed this, create a new document like this:
 wikka.php?wakka=mmymdoc
 ~~~~
 
-~~~~
+~~~~language-markdown
 # Cacti docker container
 
 First Header  | Second Header
@@ -90,7 +97,7 @@ If you are like me, you want to access to the document direct without adding "/m
 
 Edit the follow code near to the end of "libs/Wakka.class.php", backup your original file and the new must be like:
 
-```php
+```language-php
 elseif( $this->GetHandler() == 'show' && pathinfo($this->GetPageTag(), PATHINFO_EXTENSION) == 'md' && $this->page['body'] != '' )
 {
   // Hugly handler but util.
@@ -108,9 +115,9 @@ From now you can create mmymdoc.md and the system gonna to use the Markdown pars
  wikka.php?wakka=mmymdoc.md
 ```
 
-![Edit Markdown](images/mmymdoc_edit.png)
+![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
 If you dont have highliht review the css and js prism path:
-![Parse Markdown](images/mmymdoc_parse.png)
+![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
 > Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
