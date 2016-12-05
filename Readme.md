@@ -14,12 +14,9 @@ Easy steeps:
 
 1. Put this repo on "/plugins/handlers/md" directory.
 
-2. Copy the prisma css and js to your theme.
-
-3. Add the ".md" support to your Wakka.class.php file, this like on the example located on this repo "examples/Wakka.class.php.example".
+2. Add the ".md" support to your Wakka.class.php file, this like on the example located on this repo "examples/Wakka.class.php.example".
 
 The detalled installed is explain on the next points:
-(Sorry for my English Im gonna to fix this at some time.)
 
 ![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
@@ -57,17 +54,6 @@ git clone https://github.com/oemunoz/Wikka-md-handler.git md/
 ```
 
 ![Directory estructure](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/md_handler.png)
-
-1. Copy the prism.js and prims.css to your "templates" directory (look into your configuration file your theme classic/kubric/light and copy on your respective css/js directorys).
-
-```language-php
-<?php
-....
-'theme' => 'classic'
-....
-?>
-
-```
 
 Now, If you completed this, create a new document like this:
 
@@ -138,7 +124,7 @@ If you dont have highliht review the css and js prism path:
 
 > R: For now, is not, plugins like "files" and "Category" etc, are not availables with the md plugins. (I need some time for check if it is posible and/or necesary).
 
-- [ ] TODO: Ask for add the css and js on the header.php by default.
+- [x] TODO: Ask for add the css and js on the header.php by default. Now the css and js are on the handler directory we dont need to copy.
 - [ ] TODO: Check for the common div and html objets css styles, I only check the table css style.
 - [ ] TODO: Check for the TOC Generator.
 - [ ] TODO: Review how to use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown).
