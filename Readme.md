@@ -35,7 +35,7 @@ For example:
  wikka.php?wakka=mmymdoc/md
 ```
 
-2. With a document that finish on ".md".
+1. With a document that finish on ".md".
 For example:
 ```
  wikka.php?wakka=mmymdoc.md
@@ -48,6 +48,7 @@ This plugins has two behaviors:
 The first is like a simple Handler, this meaning that you have to add "/md" to the end of the url. In any case you have to install the handler for both opions:
 
 1. Drop this repo on your "/plugins/handlers/md" directory.
+
 Directory Estructure:
 
 ```language-bash
@@ -57,7 +58,7 @@ git clone https://github.com/oemunoz/Wikka-md-handler.git md/
 
 ![Directory estructure](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/md_handler.png)
 
-2. Copy the prism.js and prims.css to your "templates" directory (look into your configuration file your theme classic/kubric/light and copy on your respective css/js directorys).
+1. Copy the prism.js and prims.css to your "templates" directory (look into your configuration file your theme classic/kubric/light and copy on your respective css/js directorys).
 
 ```language-php
 <?php
@@ -100,6 +101,7 @@ If you are like me, you want to access to the document direct without adding "/m
 Edit the follow code near to the end of "libs/Wakka.class.php", backup your original file and the new must be like:
 
 ```language-php
+<?php ....
 elseif( $this->GetHandler() == 'show' && pathinfo($this->GetPageTag(), PATHINFO_EXTENSION) == 'md' && $this->page['body'] != '' )
 {
   // Hugly handler but util.
@@ -108,6 +110,7 @@ elseif( $this->GetHandler() == 'show' && pathinfo($this->GetPageTag(), PATHINFO_
   echo $this->Handler($this->GetHandler());
   echo $this->Footer();
 }
+.... ?>
 ```
 On any case I leave a copy of my Wakka.class.php on the project/expamples/ directory.
 

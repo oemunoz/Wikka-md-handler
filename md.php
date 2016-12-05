@@ -13,6 +13,8 @@
  $loader = require 'vendor/autoload.php';
  $loader->add('AppName', __DIR__.'/../src/');
 
+$site_base = WIKKA_BASE_URL;
+
 if ($this->HasAccess('read') && $this->page)
 {
 	// display markdown page.
@@ -26,8 +28,8 @@ if ($this->HasAccess('read') && $this->page)
   $parser = new \cebe\markdown\MarkdownExtra();
 
 	// TODO ask to use and put this on the header.php. (head html) Maybe this dont work on very old browers becose of this.
-	echo '<link rel="stylesheet" type="text/css" href="'.$this->GetThemePath('/').'/css/prism.css" />';
-	echo '<script src="'.$this->GetThemePath('/').'/js/prism.js"></script>';
+	echo '<link rel="stylesheet" type="text/css" href="'.$site_base.'plugins/handlers/md/css/prism.css" />';
+	echo '<script src="'.$site_base.'plugins/handlers/md/js/prism.js"></script>';
 
   // TODO This make more "like" the wiki, this needs more (check for other missing options and sets).
 	echo "\n".'<!--starting page content-->'."\n";
