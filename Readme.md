@@ -28,14 +28,14 @@ By defect WikkaWiki has their own formatting rules (these rules work like a char
 ## How?
 This plugin works in two ways (both if you wish), supose that mydoc and mydoc.md contains a document on Markdown format:
 
-1. With a Handler md. For example:
-
+1. With a Handler md.
+For example:
 ```
  wikka.php?wakka=mmymdoc/md
 ```
 
-2. With a document that finish on ".md". For example:
-
+2. With a document that finish on ".md".
+For example:
 ```
  wikka.php?wakka=mmymdoc.md
 ```
@@ -47,7 +47,7 @@ This plugins has two behaviors:
 The first is like a simple Handler, this meaning that you have to add "/md" to the end of the url. In any case you have to install the handler for both opions:
 
 1. Drop this repo on your "/plugins/handlers/md" directory.
-
+Directory Estructure:
 ![Directory estructure](images/md_handler.png)
 
 2. Copy the prism.js and prims.css to your "templates" directory (look into your configuration file your theme classic/kubric/light and copy on your respective css/js directorys).
