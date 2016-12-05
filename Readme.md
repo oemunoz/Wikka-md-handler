@@ -109,7 +109,7 @@ elseif( $this->GetHandler() == 'show' && pathinfo($this->GetPageTag(), PATHINFO_
   echo $this->Footer();
 }
 ```
-On any case I leave a copy of my Wakka.class.php on the project directory.
+On any case I leave a copy of my Wakka.class.php on the project/expamples/ directory.
 
 From now you can create mmymdoc.md and the system gonna to use the Markdown parser automaticly. (you can access to the edit page with dobleclik like the normal way.)
 
@@ -118,10 +118,27 @@ From now you can create mmymdoc.md and the system gonna to use the Markdown pars
 ```
 
 ![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
+
 If you dont have highliht review the css and js prism path:
+
 ![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
 > Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
-[WikkaWiki](http://wikkawiki.org/HomePage) is a flexible, standards-compliant and lightweight wiki engine written in PHP, which uses MySQL to store pages.
-[Cebe Markdown parser](http://markdown.cebe.cc/) A super fast, highly extensible markdown parser for PHP.
+## FAQs and TODOs
+
+- The handler have another flavors of markdown?
+> R: Yes the cebe parse have anothers flavors (traditional, GitHub, extra). By default is extra flavor, but you can change this on pd.php file.
+- The plugins works on with this handler?
+> R: For now, is not, plugins like "files" and "Category" etc, are not availables with the md plugins. (I need some time for check if it is posible and/or necesary).
+- [ ] TODO: Ask for add the css and js on the header.php by default.
+- [ ] TODO: Check for the common div and html objets css styles, I only check the table css style.
+- [ ] TODO: Check for the TOC Generator.
+- [ ] TODO: Review how to use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown).
+- [ ] TODO: Review for Atom plugin.
+- [ ] TODO: Check if the checklist option is available. :-(
+
+# Powered by:
+- [WikkaWiki](http://wikkawiki.org/HomePage) is a flexible, standards-compliant and lightweight wiki engine written in PHP, which uses MySQL to store pages.
+- [Cebe Markdown parser](http://markdown.cebe.cc) A super fast, highly extensible markdown parser for PHP.
+- [Prism](http://prismjs.com)
