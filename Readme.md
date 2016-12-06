@@ -62,7 +62,7 @@ wikka.php?wakka=mmymdoc
 ```
 
 ~~~~markdown
-# Cacti docker container
+# First level
 
 First Header  | Second Header
 ------------- | -------------
@@ -83,20 +83,6 @@ Text after list.
    - test
    - test
 - test
-
-### Thir level
-
-A bit of the GitHub spice
--------------------------
-
-In addition to the changes in the previous section, certain references are auto-linked:
-
-* SHA: be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2
-* User@SHA ref: mojombo@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2
-* User/Project@SHA: mojombo/god@be6a8cc1c1ecfe9489fb51e4869af15a13fc2cd2
-* \#Num: #1
-* User/#Num: mojombo#1
-* User/Project#Num: mojombo/god#1
 ~~~~
 
 And try to acces with:
