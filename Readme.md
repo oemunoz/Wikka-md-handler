@@ -6,7 +6,7 @@
 
 ## What is this?
 
-Yes, this is a markdown parser for [WikkaWiki](http://wikkawiki.org/HomePage) for Markdown, the magic is from the [Cebe Markdown parser](http://markdown.cebe.cc/).
+Yes, this is a markdown parser for [WikkaWiki](http://wikkawiki.org/HomePage), the magic is from the [Cebe Markdown parser](http://markdown.cebe.cc/).
 
 ![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
@@ -130,13 +130,13 @@ From now you can create mmymdoc.md and the system gonna to use the Markdown pars
  wikka.php?wakka=mmymdoc.md
 ```
 
-![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
-
-If you dont have highliht review the css and js prism path:
-
 ![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
-> Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
+#### What about highlighting:
+
+The system uses prism.js for the highlighting, when you are on GitHub flavour (is the default on this parser) uses "php" for the title of the code for example, but if you use MarkdownExtra the title is "languaje-php".
+
+With prims.js you can build your own highlighting, is very easy take a look at [Prism](http://prismjs.com).
 
 ## FAQs and TODOs
 
