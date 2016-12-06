@@ -6,7 +6,7 @@
 ## What is this?
 Yes, this is a markdown parser for [WikkaWiki](http://wikkawiki.org/HomePage) for Markdown, the magic is from the [Cebe Markdown parser](http://markdown.cebe.cc/).
 
-![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
+![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
 > Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
@@ -17,8 +17,6 @@ Easy steeps:
 2. Add the ".md" support to your Wakka.class.php file, this like on the example located on this repo "examples/Wakka.class.php.example".
 
 The detalled installed is explain on the next points:
-
-![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
 
 ## Why?
 By defect WikkaWiki has their own formatting rules (these rules work like a charm), but on this days is very common to write all cain of documentation on Markdown, Markdown is the prefered formatting code for all cain of projects. I dont have a problem to know both ways of formatting, but is a lot of work traduce from one to the other, this plugin works on this point.
@@ -58,7 +56,7 @@ git clone https://github.com/oemunoz/Wikka-md-handler.git md/
 Now, If you completed this, create a new document like this:
 
 ```
-wikka.php?wakka=mmymdoc
+wikka.php?wakka=mmymdoc/edit
 ```
 
 ~~~~markdown
@@ -84,6 +82,8 @@ Text after list.
    - test
 - test
 ~~~~
+
+![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
 
 And try to acces with:
 
@@ -127,6 +127,10 @@ If you dont have highliht review the css and js prism path:
 > Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
 ## FAQs and TODOs
+
+- The previus Wiki markup documents are supoorted?
+
+> R: Yes the cebe parse only process the ".md" documents or when you use the "/md" handler, the rest of the wikka works like usually.
 
 - The handler have another flavors of markdown?
 
