@@ -1,14 +1,14 @@
 # WikkaWiki Markdown Handler plugin
+
 [![Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/Markdown.png)](http://markdown.cebe.cc)
 [![WikkaWiki](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
 [![Prism](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/prism-syntaxhighlighter.png)](http://prismjs.com/)
 
 ## What is this?
+
 Yes, this is a markdown parser for [WikkaWiki](http://wikkawiki.org/HomePage) for Markdown, the magic is from the [Cebe Markdown parser](http://markdown.cebe.cc/).
 
 ![Parse Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_parse.png)
-
-> Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
 
 Easy steeps:
 
@@ -19,35 +19,44 @@ Easy steeps:
 The detalled installed is explain on the next points:
 
 ## Why?
+
 By defect WikkaWiki has their own formatting rules (these rules work like a charm), but on this days is very common to write all cain of documentation on Markdown, Markdown is the prefered formatting code for all cain of projects. I dont have a problem to know both ways of formatting, but is a lot of work traduce from one to the other, this plugin works on this point.
 
 ## How?
+
 This plugin works in two ways (both if you wish), supose that mydoc and mydoc.md contains a document on Markdown format:
 
-1. With a Handler md.
+* With a Handler md.
+
 For example:
+
 ```
  wikka.php?wakka=mmymdoc/md
 ```
 
-1. With a document that finish on ".md".
+* With a document that finish on ".md".
+
 For example:
+
 ```
  wikka.php?wakka=mmymdoc.md
 ```
 
 ### How install it?
+
 This plugins has two behaviors:
 
 #### Install the handler:
+
 The first is like a simple Handler, this meaning that you have to add "/md" to the end of the url. In any case you have to install the handler for both opions:
 
-1. Drop this repo on your "/plugins/handlers/md" directory.
+Drop this repo on your "**/plugins/handlers/md**" directory.
 
 Directory Estructure:
 
 ```bash
 cd plugins/handlers/
+mkdir md
 git clone https://github.com/oemunoz/Wikka-md-handler.git md/
 ```
 
@@ -85,6 +94,8 @@ Text after list.
 
 ![Edit Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/mmymdoc_edit.png)
 
+> Note that the current Geshi buttons are for the Wikka format, Im am working on use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown), for the edit controls. But Markdown is not a dificult Format to learn.
+
 And try to acces with:
 
 ```
@@ -92,6 +103,7 @@ wikka.php?wakka=mmymdoc/md
 ```
 
 #### Configure for automatic access:
+
 If you are like me, you want to access to the document direct without adding "/md", then you have to add the support for the ".md" extencion on your wikis documents.
 
 Edit the follow code near to the end of "libs/Wakka.class.php", backup your original file and the new must be like:
