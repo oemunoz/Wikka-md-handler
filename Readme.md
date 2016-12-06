@@ -158,6 +158,7 @@ With prims.js you can build your own highlighting, is very easy take a look at [
 - [ ] TODO: Review how to use the [yii2-markdown](https://github.com/kartik-v/yii2-markdown).
 - [ ] TODO: Review for Atom plugin.
 - [ ] TODO: Check if the checklist option is available. :-(
+- [ ] TODO: Review the CamelCase link options.
 
 # Powered by:
 - [WikkaWiki](http://wikkawiki.org/HomePage) is a flexible, standards-compliant and lightweight wiki engine written in PHP, which uses MySQL to store pages.
