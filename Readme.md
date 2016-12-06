@@ -57,9 +57,9 @@ git clone https://github.com/oemunoz/Wikka-md-handler.git md/
 
 Now, If you completed this, create a new document like this:
 
-~~~~
+```
 wikka.php?wakka=mmymdoc
-~~~~
+```
 
 ~~~~markdown
 # Cacti docker container
@@ -78,9 +78,9 @@ Content Cell  | Content Cell
 
 And try to acces with:
 
-~~~~
+```
 wikka.php?wakka=mmymdoc/md
-~~~~
+```
 
 #### Configure for automatic access:
 If you are like me, you want to access to the document direct without adding "/md", then you have to add the support for the ".md" extencion on your wikis documents.
@@ -88,7 +88,8 @@ If you are like me, you want to access to the document direct without adding "/m
 Edit the follow code near to the end of "libs/Wakka.class.php", backup your original file and the new must be like:
 
 ```php
-<?php ....
+<?php
+....
 elseif( $this->GetHandler() == 'show' && pathinfo($this->GetPageTag(), PATHINFO_EXTENSION) == 'md' && $this->page['body'] != '' )
 {
   // Hugly handler but util.
@@ -97,7 +98,8 @@ elseif( $this->GetHandler() == 'show' && pathinfo($this->GetPageTag(), PATHINFO_
   echo $this->Handler($this->GetHandler());
   echo $this->Footer();
 }
-.... ?>
+....
+?>
 ```
 On any case I leave a copy of my Wakka.class.php on the project/expamples/ directory.
 
