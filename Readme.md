@@ -1,4 +1,4 @@
-# WikkaWiki Markdown Handler plugin
+# [WikkaWiki Markdown Handler plugin](https://github.com/oemunoz/Wikka-md-handler)
 
 [![Markdown](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/Markdown.png)](http://markdown.cebe.cc)
 [![WikkaWiki](https://github.com/oemunoz/Wikka-md-handler/raw/master/images/wizard.gif)](http://wikkawiki.org/HomePage)
