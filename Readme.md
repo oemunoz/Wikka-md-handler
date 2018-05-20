@@ -73,7 +73,7 @@ First Header  | Second Header
 Content Cell  | Content Cell
 Content Cell  | Content Cell
 
-```language-css
+```css
 .example {
 		font-size: 2em;
 	}
