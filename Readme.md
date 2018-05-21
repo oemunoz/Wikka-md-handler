@@ -40,6 +40,12 @@ For example:
  wikka.php?wakka=mmymdoc.md
 ```
 
+3. Clone the Parsedown repository to the parsedown directory
+For example:
+```
+git clone git@github.com:erusev/parsedown.git parsedown/
+```
+
 ### How install it?
 This plugins has two behaviors:
 
